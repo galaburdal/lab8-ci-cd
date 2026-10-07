@@ -11,7 +11,7 @@ pipeline {
         stage('Static Code Analysis') {
             steps {
                 sh 'python3 -m pip install pylint --break-system-packages'
-                sh 'pylint --disable=C,R,E0401,W0613 features/steps/'
+                sh 'python3 -m pylint --disable=C,R,E0401,W0613 features/steps/'
             }
         }
 
