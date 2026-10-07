@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_LOGIN/YOUR_REPO.git'
+                git branch: 'main', url: 'https://github.com/galaburdal/lab8-ci-cd.git'
             }
         }
 
